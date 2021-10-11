@@ -8,7 +8,7 @@ from .base import BadgeGnerator
 from .base import Images
 
 
-class UsrBade(BadgeGnerator):
+class UsrBadge(BadgeGnerator):
     template_file = 'templates/base.svg'  
 
     def __init__(self):

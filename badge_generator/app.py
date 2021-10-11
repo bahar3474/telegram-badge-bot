@@ -5,14 +5,14 @@ from flask import (
     Flask, request, send_file
 )
 
-from badges import UsrBade
+from badges import UsrBadge
 
 
 app = Flask(__name__)
 
 @app.route('/badge')
 def badge():
-    badge = UsrBade()
+    badge = UsrBadge()
     data, mimetype = badge.render(request.args)
     return send_file(io.BytesIO(data), mimetype=mimetype)
 
