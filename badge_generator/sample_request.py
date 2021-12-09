@@ -30,7 +30,7 @@ if __name__ == '__main__':
 
     render_badge(
             link='http://127.0.0.1:8000',
-            usr_fullname='قلی',
+            usr_fullname='قلی‌چه',
             usr_id='',
             badge_id='',
             scale=2
