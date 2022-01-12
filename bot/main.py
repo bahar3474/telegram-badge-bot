@@ -1,6 +1,7 @@
+import os
+
 from telegram.ext import Updater, CallbackQueryHandler, MessageHandler, Filters
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
-import cv2
 
 from utils import render_badge
 from config import Config
@@ -57,6 +58,7 @@ def attach_badge(update, context):
 
 
 if __name__ == '__main__':
+    token = os.environ.get('BOT') if os.environ.get('BOT') else config.token
     updater = Updater(config.token, use_context=True)
 
     # Define handler for text messages

@@ -1,5 +1,5 @@
 class Config:
-    token = '###'
+    token = ''
     badges = [
         {
             'id': '1',
