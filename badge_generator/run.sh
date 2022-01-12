@@ -1,1 +1,1 @@
-gunicorn --workers=2 app:app
+gunicorn --workers=2 --bind 0.0.0.0:7070 app:app

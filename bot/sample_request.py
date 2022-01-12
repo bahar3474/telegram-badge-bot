@@ -19,17 +19,17 @@ def render_badge(
         scale,
         encouragement_sentence,
     )
-
     response = requests.get(badge_url, stream=True)
-    with open(f'images/generated_badge/{usr_id}_badge.png', 'wb') as out_file:
+    with open(f'generated_badges/{usr_id}_badge.png', 'wb') as out_file:
         shutil.copyfileobj(response.raw, out_file)
     del response
     return 
 
+
 if __name__ == '__main__':
 
     render_badge(
-            link='http://127.0.0.1:8000',
+            link='http://badge_generator:7070',
             usr_fullname='قلی‌چه',
             usr_id='',
             badge_id='',
