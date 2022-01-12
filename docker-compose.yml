@@ -2,11 +2,9 @@ version: "3.8"
 services:
   bot:
     build: bot
-    privileged: true #TODO: Remove this line when it doesn't need VPN to run
 
   badge_generator:
     build: badge_generator
-    privileged: true #TODO: Remove this line when it doesn't need VPN to run
     expose:
       - 8000
 
