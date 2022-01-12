@@ -1,2 +1,2 @@
-sleep 60
+sleep 1060
 python main.py
