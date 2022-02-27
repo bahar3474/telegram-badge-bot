@@ -21,7 +21,7 @@ def save_user_info_and_show_badges(update, context):
         text = config.messages['choose_badge']
         buttons = [
             InlineKeyboardButton(text=badge['title'],
-                                 callback_data=f'badge_{badge["id"]}')
+                                 callback_data=f'badge_{badge["path"]}')
             for badge in config.badges
         ]
         keyboard = [buttons[i:i + 2] for i in range(0, len(buttons), 2)]
@@ -45,7 +45,7 @@ def attach_badge(update, context):
         key = update.effective_chat.id
         user_id = context.user_data[key]['id']
         user_name = context.user_data[key]['name']
-        badge_id = update.callback_query.data.replace('badge_', '')
+        badge_id = update.callback_query.data[6:]
 
         # Generate badge and send final photo
         badge_path = render_badge(user_name, user_id, badge_id)

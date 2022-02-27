@@ -18,7 +18,7 @@ class UsrBadge(BadgeGnerator):
         if params.get('format') in ['png']:
             params = self.fix_string_params(params)
 
-        self.template.set_text('usr_fullname', params.get('usr_fullname', 'قلی'))
+        self.template.set_text('usr_fullname', params.get('usr_fullname', 'User'))
         self.template.set_image(
             'usr_img',
             file=Images.get_path('users', params.get('usr_id', 'default')),
@@ -29,7 +29,3 @@ class UsrBadge(BadgeGnerator):
             file=Images.get_path('badges', params.get('badge_id', 'default')),
             mimetype='image/png'
         )
-        # self.template.set_text(
-        #     'encouragement_sentence',
-        #     params.get('encouragement_sentence', '')
-        # )  
