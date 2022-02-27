@@ -51,8 +51,8 @@ class BadgeGnerator(object):
 
 class Images(object):
     @staticmethod
-    def get_path(itype, id, ext='png'):
-        image_path = 'images/{}/{}.{}'.format(itype, id, ext)
+    def get_path(itype, id):
+        image_path = 'images/{}/{}'.format(itype, id)
         if not os.path.exists(image_path):
-            image_path = 'images/{}/{}.{}'.format(itype, 'default', ext)
+            image_path = 'images/{}/{}'.format(itype, 'default.png')
         return image_path

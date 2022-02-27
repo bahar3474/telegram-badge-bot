@@ -19,9 +19,11 @@ class UsrBadge(BadgeGnerator):
             params = self.fix_string_params(params)
 
         self.template.set_text('usr_fullname', params.get('usr_fullname', 'User'))
+        user = params.get('usr_id', 'default')
+        user = user + '.jpg' if user != 'default' else user + '.png'
         self.template.set_image(
             'usr_img',
-            file=Images.get_path('users', params.get('usr_id', 'default')),
+            file=Images.get_path('users', user),
             mimetype='image/png'
         )
         self.template.set_image(

@@ -134,12 +134,12 @@
 
     <rect
        style="opacity:1;fill:#424242;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:5.85466;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
-       id="badge_img"
+       id="usr_img"
        width="126.08264"
        height="107.7274"
        x="11.417359"
        y="12.064262"
-       template-id="badge_img" />
+       template-id="usr_img" />
     <g
        id="g1761"
        transform="matrix(0.39528715,0,0,0.45811522,-64.492119,88.111688)">
@@ -148,9 +148,9 @@
          x="177.00771"
          height="90.952377"
          width="110"
-         id="usr_img"
+         id="badge_img"
          style="opacity:1;fill:#656565;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.125;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
-         template-id="usr_img" />
+         template-id="badge_img" />
     </g>
     <text
        xml:space="preserve"
