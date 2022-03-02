@@ -3,7 +3,7 @@
 
 <svg
    width="3in"
-   height="1.5in"
+   height="3in"
    viewBox="0 0 150 150"
    version="1.1"
    id="svg40744"
@@ -142,12 +142,12 @@
        template-id="usr_img" />
     <g
        id="g1761"
-       transform="matrix(0.39528715,0,0,0.45811522,-64.492119,88.111688)">
+       transform="matrix(0.39528715,0,0,0.39811522,-70.492119,0.111688)">
       <rect
-         y="12.307628"
+         y="0"
          x="177.00771"
-         height="90.952377"
-         width="110"
+         height="150"
+         width="150"
          id="badge_img"
          style="opacity:1;fill:#656565;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.125;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
          template-id="badge_img" />
@@ -161,7 +161,7 @@
        transform="scale(1.058391,0.94483041)"><tspan
          sodipodi:role="line"
          id="usr_fullname"
-         x="102.336418"
+         x="122.336418"
          y="147.73323"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.1118px;font-family:IRANSans;-inkscape-font-specification:'IRANSans Bold';text-align:center;direction:rtl;text-anchor:end;fill:#449ec2;fill-opacity:1;stroke-width:1.05839px"
          template-id="usr_fullname">قلی</tspan></text>
